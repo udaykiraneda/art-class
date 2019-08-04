@@ -461,3 +461,7 @@ a, a:hover {
 }
 
 /****/
+
+.features-list p{
+  height: 100px;
+}
