@@ -37,4 +37,21 @@
 
   });
 
+
+  var $form = $('form.contactForm'),
+    url = 'https://script.google.com/macros/s/AKfycbzMGPQoEnouUhvehYZ5qkcEV_FLLBrMj6hPLuuWrUh_kqehVl4/exec'
+
+  $form.on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serializeArray().reduce((acc, ele)=> {acc[ele.name] = ele.value; return acc;}, {}),
+    }).success( ()=>{
+      $form[0].reset();
+      alert('Thank you, we will get back to you :)');
+    });
+  });
+
 })(jQuery);
