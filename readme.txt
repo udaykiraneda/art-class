@@ -1,6 +1,3 @@
-Thanks for downloading this theme!
+## Bandana
 
-Theme Name: Bethany
-Theme URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+- This is a static website that is created using an existing bootstrap theme
